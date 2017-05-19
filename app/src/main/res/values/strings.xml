@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Autonomia O2</string>
+    <string name="capacity">Capacità Bombola (l.)</string>
+    <string name="pressure">Pressione bombola (atm.)</string>
+    <string name="consumption">Consumo (l/min.)</string>
+    <string name="calculate">Calcola</string>
+    <string name="clear">Pulisci</string>
+    <string name="autonomia">Autonomia (min):</string>
+    <string name="bombola">Bombola</string>
+    <string name="bombolino">Bombolino</string>
+    <string name="load_default">Carica default per:</string>
+</resources>

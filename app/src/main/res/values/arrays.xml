@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bombole">
+        <item></item>
+        <item>Bombolino (2 lt)</item>
+        <item>Bombola ambulanza (10 lt)</item>
+    </string-array>
+</resources>
