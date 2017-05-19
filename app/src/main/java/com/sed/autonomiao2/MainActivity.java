@@ -134,10 +134,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         loadSpinner();
 
         ImageView myImage = (ImageView) findViewById(R.id.logo);
-        myImage.setAlpha(100); //value: [0-255]. Where 0 is fully transparent and 255 is fully opaque.
+        myImage.setImageAlpha(80); //value: [0-255]. Where 0 is fully transparent and 255 is fully opaque.
     }
 
     private void loadSpinner() {
+        /*
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -147,6 +148,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+        */
     }
 
 //    @Override
@@ -176,7 +178,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         int consumption = Integer.valueOf(consumptionText.getText().toString().isEmpty() ? "0" :
                 consumptionText.getText().toString());
 
-        autonomyText.setText(String.valueOf(calculateAutonomy(capacity, pressure, consumption)));
+        autonomyText.setText(getString(R.string.autonomia_result, calculateAutonomy(capacity, pressure, consumption)));
 
     }
 
